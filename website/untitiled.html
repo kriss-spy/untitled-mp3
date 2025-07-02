@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booting Sekai</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Arial', sans-serif;
+            overflow: hidden;
+        }
+
+        .boot-container {
+            text-align: center;
+            color: white;
+        }
+
+        .boot-text {
+            font-size: 3rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            animation: pulse 1.5s ease-in-out infinite alternate;
+        }
+
+        .loading-dots {
+            font-size: 3rem;
+            margin-top: 20px;
+            animation: blink 1s infinite;
+        }
+
+        @keyframes pulse {
+            from {
+                opacity: 0.7;
+                transform: scale(0.95);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes blink {
+
+            0%,
+            50% {
+                opacity: 1;
+            }
+
+            51%,
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .progress-bar {
+            width: 300px;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 2px;
+            margin: 30px auto;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            width: 0;
+            height: 100%;
+            background: white;
+            border-radius: 2px;
+            animation: progress 3s linear forwards;
+        }
+
+        @keyframes progress {
+            to {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boot-container">
+        <div class="boot-text">booting sekai</div>
+        <div class="loading-dots">...</div>
+        <div class="progress-bar">
+            <div class="progress-fill"></div>
+        </div>
+    </div>
+
+    <script>
+        // Redirect after 3 seconds (3000 milliseconds)
+        // Change the URL below to your desired destination
+        setTimeout(function () {
+            window.location.href = "https://pjsekai.sega.jp/"; // Replace with your target URL
+        }, 3000);
+    </script>
+</body>
+
+</html>
