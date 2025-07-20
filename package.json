@@ -1,0 +1,23 @@
+{
+  "name": "untitled-mp3",
+  "version": "1.0.0",
+  "description": "hobby project for pjsk untitled.mp3",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kriss-spy/untitled-mp3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kriss-spy/untitled-mp3/issues"
+  },
+  "homepage": "https://github.com/kriss-spy/untitled-mp3#readme"
+}

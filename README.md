@@ -12,7 +12,7 @@ the website will have some animations, and then redirect to pjsk website
 
 the app will play some animations like it's actually playing a song, then have animations like pjsk startup, open pjsk app on phone if available, open pjsk website if not
 
-## ios app
+## ios app (maybe)
 
 same as android app
 
